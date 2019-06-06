@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>P2 Style Guide</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <script src="http://code.vostrel.cz/jquery.reel.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/bao7tqz.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+
+  <body>
+
+    <div class="navigation">
+      <button class="button button--aylen button--round-l button--text-thick left" onclick="window.location.href = 'citations.html';" class="buttonn button-nav">Go to the Citations</button>
+      <button class="button button--aylen button--round-l button--text-thick" onclick="window.location.href = 'wireframe.html';" class="buttonn button-nav">Go to the Wireframes</button>
+      <button class="button button--aylen button--round-l button--text-thick " onclick="window.location.href = 'sitemap.html';" class="buttonn button-nav">Go to the SiteMap</button>
+      <button class="button button--aylen button--round-l button--text-thick right" onclick="window.location.href = 'https://github.com/Sahil-96/Iat-339-Project-2';" class="buttonn button-nav">Our Github Repo</button>
+    </div>
+
+
+
+
+    <section>
+
+
+      <h1>My Style Guide</h1>
+
+      <p>This style guide was built based off of the sample provided by Paul B.</p>
+
+
+      <nav>
+
+        <p>
+          Jump to:
+          <a class="button-submit" href="#interactive_elements">Interactive Elements</a>,
+          <a class="button-submit" href="#text_elements">Text Elements</a>,
+          <a class="button-submit" href="#combined_elements">Combined Elements</a>,
+        </p>
+
+      </nav>
+
+    </section>
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+
+      <!-- Default Button styling section -->
+      <section>
+
+        <h2>Navigation Button</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.button .button-nav</p>
+
+        <h3>Sample code:</h3>
+          <div class="code-section">
+            <code>&lt;a class="buttonn button-nav" href="#"&gt;Default Button&lt;/a&gt;</code>
+          </div>
+
+        <h3>Rendered element:</h3>
+          <a class="buttonn button-nav" href="#">Default Button</a>
+
+      </section>
+
+      <section>
+        <h2>In-text link</h2>
+
+        <h3>CSS selector:</h3>
+          <p>.inline-text</p>
+
+        <h3>Sample code:</h3>
+          <div class="code-section">
+            <code>
+              &lt;p&gt;<br>
+              Within this line of text, you can click on:<br>
+              &lt;a href = "citations.html" class="inline-text"&gt; <br>
+              Go to the Citations Page,&lt;/a&gt;and you will go to the Citations Page.<br>
+              &lt;/p&gt;<br>
+            </code>
+        </div>
+
+        <h3>Rendered element:</h3>
+          <p>
+            Within this line of text, you can click on:
+            <a href = "citations.html" class="inline-text"> Go to the Citations Page,</a>and you will go to the Citations Page.
+          </p>
+      </section>
+
+      <section>
+        <h2>Submit Button</h2>
+
+        <h3>CSS selector:</h3>
+          <p>.button .button-submit</p>
+
+        <h3>Sample code:</h3>
+          <div class="code-section">
+            <code>
+              &lt;a class="button button-submit" href="#"&gt;Submit Button&lt;/a&gt;<br>
+            </code>
+        </div>
+
+        <h3>Rendered element:</h3>
+          <a class="buttonn button-submit" href="#">Submit Button</a>
+      </section>
+
+      <section>
+        <h2>Read More Button</h2>
+
+        <h3>CSS selector:</h3>
+          <p>.button .button-more-info</p>
+
+        <h3>Sample code:</h3>
+          <div class="code-section">
+            <code>
+             &lt;a class="buttonn button-more-info" href="#"&gt;&lt;span&gt;Read More&lt;/span&gt;&lt;/a&gt;<br>
+            </code>
+          </div>
+
+        <h3>Rendered element:</h3>
+          <a class="buttonn button-more-info" href="#"><span>Read More</span></a>
+      </section>
+
+      <section>
+        <h2>Text Input Field</h2>
+
+        <h3>CSS selector:</h3>
+          <p> name ="input"</p>
+
+        <h3>Sample code:</h3>
+          <div class="code-section">
+            <code>
+              &lt;form method="post" action="#"&gt;<br>
+              &lt;label for="input"&gt;<br>
+                Prompt:<br>
+              &lt;textarea name="input" placeholder="Write something here" type="text"&gt;&lt;/textarea&gt;<br>
+              &lt;/label&gt;<br>
+              &lt;/form&gt;<br>
+            </code>
+          </div>
+
+        <h3>Rendered element:</h3>
+          <form method="post" action="#">
+          <!-- Inputs -->
+            <label for="input">
+              Prompt:
+            <!-- </label> -->
+                <textarea name="input" placeholder="Write something here" type="text"></textarea>
+            </label>
+          </form>
+        </section>
+
+      <section>
+<!--- the search bar -->
+      <h2>Search Bar</h2>
+
+        <h3>CSS selector:</h3>
+          <p> id ="search"</p>
+
+        <h3>Sample code:</h3>
+          <div class="code-section">
+            <code>
+              &lt;form method="get" action="#"&gt;<br>
+              &lt;input id="search" placeholder="Search for a product" type="text"&gt;<br>
+              &lt;/form&gt;<br>
+            </code>
+          </div>
+
+          <form method="get" action="#">
+          <!-- Inputs -->
+            <input id="search" placeholder="Search for a product" type="text">
+          </form>
+      </section>
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <section>
+        <h2>Headings</h2>
+
+        <h3>CSS selector:</h3>
+          <p>No special classes</p>
+
+        <h3>Sample code:</h3>
+          <div class="code-section">
+            <code>
+              &lt;h1&gt;Heading 1&lt;/h1&gt;<br>
+              &lt;h2&gt;Heading 2&lt;/h2&gt;<br>
+              &lt;h3&gt;Heading 3&lt;/h3&gt;<br>
+            </code>
+          </div>
+
+        <h3>Rendered element:</h3>
+
+          <h1>Heading 1</h1>
+          <h2>Heading 2</h2>
+          <h3>Heading 3</h3>
+          <h4>Heading 4</h4>
+      </section>
+
+      <section>
+        <h2>Paragraphs</h2>
+
+        <h3>CSS selector:</h3>
+          <p>No special classes</p>
+
+        <h3>Sample code:</h3>
+          <div class="code-section">
+            <code>
+                &lt;p&gt; <br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus lectus sit amet tortor tincidunt gravida. Nam luctus nunc leo, sit amet malesuada magna molestie quis.<br>
+                &lt;/p&gt;<br>
+            </code>
+          </div>
+
+          <h3>Rendered element:</h3>
+
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus lectus sit amet tortor tincidunt gravida. Nam luctus nunc leo, sit amet malesuada magna molestie quis. Aliquam porta vehicula tortor quis ultricies. Etiam nec semper nisi. Vestibulum vehicula ipsum eu ligula porta, at commodo neque rutrum. Suspendisse id euismod lacus. Cras id tortor mauris. Morbi dictum quam nunc, dignissim iaculis eros rutrum sed. Aliquam erat volutpat. Aliquam sollicitudin nibh sed eros cursus, vel tincidunt erat tempor. Nullam malesuada rutrum augue, nec dapibus nunc tincidunt nec. Quisque ac dignissim nunc. Aliquam vel tortor finibus, mattis justo ac, dapibus nulla. Etiam id eleifend metus. Maecenas eu pellentesque diam. Fusce ac imperdiet ligula.
+            </p>
+      </section>
+
+      <section>
+        <h2>Bulleted Lists</h2>
+
+        <h3>CSS selector:</h3>
+          <p>No special classes</p>
+
+        <h3>Sample code:</h3>
+          <div class="code-section">
+            <code>
+              &lt;ul&gt;<br>
+              &lt;li&gt;Item 1&lt;/li&gt;<br>
+              &lt;li&gt;Item 2&lt;/li&gt;<br>
+              &lt;li&gt;Item 3&lt;/li&gt;<br>
+              &lt;/ul&gt;<br>
+            </code>
+          </div>
+
+          <h3>Rendered element:</h3>
+
+            <ul>
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+            </ul>
+      </section>
+
+      <section>
+        <h2>Numbered Lists</h2>
+
+        <h3>CSS selector:</h3>
+          <p>No special classes</p>
+
+        <h3>Sample code:</h3>
+          <div class="code-section">
+            <code>
+              &lt;ol&gt;<br>
+              &lt;li&gt;Item 1&lt;/li&gt;<br>
+              &lt;li&gt;Item 2&lt;/li&gt;<br>
+              &lt;li&gt;Item 3&lt;/li&gt;<br>
+              &lt;/ol&gt;<br>
+            </code> </div>
+
+          <h3>Rendered element:</h3>
+
+            <ol>
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+              <li>Item 4</li>
+              <li>Item 5</li>
+              <li>Item 6</li>
+              <li>Item 7</li>
+              <li>Item 8</li>
+              <li>Item 9</li>
+              <li>Item 10</li>
+            </ol>
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+
+      <section>
+        <h2>Main Navigation</h2>
+
+        <h3>CSS selector:</h3>
+          <p>.container-nav .main-nav-logo .main-nav-search .main-nav-item</p>
+
+        <h3>Sample code:</h3>
+          <div class="code-section">
+            <code>
+              &lt;div class="container-nav"&gt;<br>
+              &lt;a class="logo-style main-nav-logo" href="#"&gt;Logo&lt;/a&gt;<br>
+              &lt;div class="main-nav-search"&gt;<br>
+              &lt;form method="get" action="#"&gt;<br>
+              &lt;input id="search" placeholder="Search for a product" type="text"&gt;<br>
+              &lt;/form&gt;<br>
+              &lt;/div&gt;<br>
+              &lt;a class="button button-nav main-nav-item" href="#"&gt;Browse&lt;/a&gt;<br>
+              &lt;a class="button button-nav main-nav-item" href="#"&gt;Events&lt;/a&gt;<br>
+              &lt;a class="button button-nav main-nav-item" href="#"&gt;About&lt;/a&gt;<br>
+              &lt;/div&gt;<br>
+            </code>
+          </div>
+
+          <h3>Rendered element:</h3>
+
+
+            <nav class="container-nav">
+
+                <div class="logo-nav">
+                  <img src="img/logo_new.jpeg" alt="logo" width="150rem">
+                    <!-- <a class="logo-style main-nav-logo" href="#">Logo</a> -->
+                </div>
+
+                <div class="searchbar-nav">
+                  <form>
+                    <!-- Inputs -->
+                    <input id="search" placeholder="Search for a product" type="text">
+                  </form>
+                </div>
+
+
+              <div class="menu-nav">
+                <button class="button button--aylen button--round-l button--text-thick left">Browse</button>
+                <button class="button button--aylen button--round-l button--text-thick">Events</button>
+                <button class="button button--aylen button--round-l button--text-thick right">About</button>
+              </div>
+
+            </nav>
+
+      </section>
+
+      <section>
+        <h2>Product Listing</h2>
+
+        <h3>CSS selector:</h3>
+          <p>.all-card-containers .card-container .image-container .card-text-container .card-price</p>
+
+        <h3>Sample code:</h3>
+          <div class="code-section">
+            <code>
+              &lt;div class="all-card-containers"&gt;<br>
+              &lt;div class="card-container"&gt;<br>
+              &lt;div class="image-conatiner"&gt;<br>
+              &lt;img src="img/cardViewCatan.jpg" alt="An image of game" style="width: 10em; height: auto;"&gt;<br>
+              &lt;div class="card-text-container"&gt;<br>
+              &lt;h4&gt;Settler's of Catan&lt;/h4&gt;<br>
+              &lt;div class="card-price"&gt;<br>
+              &lt;p&gt;$34.99&lt;/p&gt;<br>
+              &lt;/div&gt;<br>
+              &lt;/div&gt;<br>
+              &lt;/div&gt;<br>
+              &lt;/div&gt;<br>
+              &lt;/div&gt;<br>
+            </code>
+          </div>
+
+        <h3>Rendered element:</h3>
+
+        <div class="product-base">
+
+          <div class="product-img">
+             <img src="img/product.png" alt="3d printer" width="250">
+
+          </div>
+
+          <div class="product-description">
+
+            <div class="product-name">
+              <p>Robo R2 - High-Performance Smart 3D Printer with Wi-Fi </p>
+
+            </div>
+            <div class="product-price-and-status">
+              <div class="product-price">
+                <p>$350</p>
+
+              </div>
+              <div class="product-status">
+                <p>In-Stock</p>
+
+              </div>
+            </div>
+
+
+            <a href="#"<div class="product-star">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </div></a>
+
+            <div class="add-to-cart">
+            <button class="button button--moema button--text-thick button--text-upper button--size-s">Add to cart</button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+    <img src="img/model/D-01.jpg"
+      class="reel"
+      id="image"
+      data-images="img/model/D-##.jpg"
+      data-frames="60"
+      data-loops="false"
+      data-speed="0.5"
+      data-revolution="100">
+
+  </body>
+</html>
